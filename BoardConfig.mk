@@ -22,9 +22,6 @@ include device/cyanogen/msm8916-common/BoardConfigCommon.mk
 
 DEVICE_PATH := device/xiaomi/wt88047x
 
-# Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
-
 # Camera
 BOARD_CAMERA_SENSORS := ov2680_5987fhq ov8865_q8v18a ov2680_skuhf
 
