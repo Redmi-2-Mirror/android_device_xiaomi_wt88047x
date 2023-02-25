@@ -52,8 +52,7 @@ TARGET_BOOTANIMATION_HALF_RES := true
 # Camera
 PRODUCT_PACKAGES += \
     camera.msm8916 \
-    libshim_camera \
-    Snap
+    libshim_camera
 
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
