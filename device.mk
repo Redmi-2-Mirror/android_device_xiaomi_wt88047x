@@ -116,8 +116,7 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-service.wt88047x \
     calmodule.cfg \
     libcalmodule_common \
-    sensors.msm8916 \
-    sensors.wt88047x
+    sensors.msm8916
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensors/_hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/_hals.conf
