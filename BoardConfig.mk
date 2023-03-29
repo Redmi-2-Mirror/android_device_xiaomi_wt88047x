@@ -18,7 +18,7 @@
 FORCE_32_BIT := true
 
 # Inherit from msm8916-common
-include device/cyanogen/msm8916-common/BoardConfigCommon.mk
+include device/xiaomi/msm8916-common/BoardConfigCommon.mk
 
 DEVICE_PATH := device/xiaomi/wt88047x
 
