@@ -60,8 +60,6 @@ TARGET_INIT_VENDOR_LIB := libinit_wt88047x
 TARGET_RECOVERY_DEVICE_MODULES := libinit_wt88047x
 
 # Kernel
-BOARD_KERNEL_IMAGE_NAME := zImage-dtb
-TARGET_KERNEL_SOURCE := kernel/wingtech/msm8916
 TARGET_KERNEL_CONFIG := lineageos_wt88047_defconfig
 BOARD_KERNEL_CMDLINE += phy-msm-usb.floated_charger_enable=1
 
