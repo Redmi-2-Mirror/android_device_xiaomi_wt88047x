@@ -79,3 +79,7 @@ TARGET_LD_SHIM_LIBS += \
 
 # inherit from the proprietary version
 include vendor/xiaomi/wt88047x/BoardConfigVendor.mk
+
+# Properties
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
+TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
