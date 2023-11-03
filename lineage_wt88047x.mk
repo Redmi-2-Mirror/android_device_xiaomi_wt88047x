@@ -13,7 +13,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-$(call inherit-product, device/xiaomi/wt88047x/full_wt88047x.mk)
+# Inherit from those products. Most specific first.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+
+# Inherit from wt88047x device
+$(call inherit-product, device/xiaomi/wt88047x/device.mk)
 
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/lineage/config/common_mini_phone.mk)
@@ -27,14 +31,12 @@ TARGET_BOARD_PLATFORM_VARIANT := msm8916
 # Assert
 TARGET_OTA_ASSERT_DEVICE := HM2014811,HM2014812,HM2014813,HM2014814,HM2014815,HM2014816,HM2014817,HM2014818,HM2014819,HM2014820,HM2014821,HM2014112,wt88047,wt86047,wt88047x
 
+# Device identifier. This must come after all inclusions
 PRODUCT_NAME := lineage_wt88047x
-BOARD_VENDOR := xiaomi
 PRODUCT_DEVICE := wt88047x
+PRODUCT_BRAND := Xiaomi
+PRODUCT_MODEL := Redmi 2
+PRODUCT_MANUFACTURER := Xiaomi
+BOARD_VENDOR := xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
-
-# Build fingerprint
-BUILD_FINGERPRINT="Xiaomi/2014817/HM2014817:5.1.1/LMY47V/V9.2.5.0.LHJMIEK:user/release-keys"
-
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="2014817-user 5.1.1 LMY47V V9.2.5.0.LHJMIEK release-keys"
